@@ -26,4 +26,4 @@ To run this bot on your machine:
    DATABASE_URL = 'your_database_url_here'
    ```
 
-That's it! Now you can run the bot and start getting reminders.
+That's it! Now you can run the bot.
