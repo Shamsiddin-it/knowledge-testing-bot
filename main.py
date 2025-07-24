@@ -40,7 +40,10 @@ async def start(message: Message):
             session.add(user)
             await session.commit()
 
-
+@dp.message(F.text == '/cancel')
+async def cancel(message: Message, state: FSMContext):
+    await state.clear()
+    await message.answer("Operation cancelled.", reply_markup=kb)
 
 
 @dp.message(F.text == '/add_test')
